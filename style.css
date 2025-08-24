@@ -1,0 +1,169 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+:root {
+  --bg-color: #ffbe0b;
+  --text-color: #3a86ff;
+  --button-primary: #fb5607;
+  --main-color: #3a86ff;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 5rem;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--bg-color);
+  max-width: 120rem;
+  height: 100dvh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.title {
+  font-size: 5.6rem;
+  font-weight: 800;
+  color: var(--main-color);
+  margin-bottom: 1.6rem;
+}
+
+.text {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 1.6rem;
+}
+
+.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: var(--button-primary);
+  padding: 1.6rem 3.2rem;
+  border-radius: 5rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  width: fit-content;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: var(--button-primary);
+  text-decoration: underline;
+  scale: 1.05;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  width: 60%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Media Queries */
+@media (max-width: 1366px) {
+  .left {
+    margin: 0 6rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .left {
+    margin: 0 0 0 6rem;
+    width: 60%;
+  }
+
+  .right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .left {
+    margin: 0 0 0 6rem;
+    width: 80%;
+  }
+
+  .img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 899px) {
+  .left {
+    margin: 0 0 0 6rem;
+    width: 90%;
+  }
+}
+
+@media (max-width: 839px) {
+  .left {
+    margin: 0 0 0 6rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 766px) {
+  body {
+    flex-direction: column-reverse;
+  }
+
+  .left {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 408px) {
+  .left {
+    margin: 2.5rem 0 0 2rem;
+    width: 90%;
+  }
+
+  .title {
+    font-size: 3.2rem;
+  }
+
+  .text {
+    font-size: 1.8rem;
+  }
+}

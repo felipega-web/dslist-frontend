@@ -1,0 +1,158 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+:root {
+  --bg-color: #ffbe0b;
+  --text-color: #3a86ff;
+  --button-primary: #fb5607;
+  --main-color: #3a86ff;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 5rem;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--bg-color);
+  max-width: 120rem;
+  height: 100dvh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#jogos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+#title {
+  font-size: 3.2rem;
+  color: var(--text-color);
+  margin: 8rem 0 2rem 0;
+}
+
+.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: var(--button-primary);
+  padding: 1.6rem 3.2rem;
+  border-radius: 5rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: var(--button-primary);
+  text-decoration: underline;
+  scale: 1.05;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+ display: flex;
+ align-items: center;
+ border-radius: 1rem;
+ border: 1px solid var(--text-color);
+ padding: 1rem;
+ margin-bottom: 2rem;
+}
+
+.card-img {
+  width: 10rem;
+  border-radius: 1rem;
+  margin-right: 2rem;
+}
+
+.card-title {
+  font-size: 2rem;
+  color: var(--text-color);
+  width: 40rem;
+  margin-right: 2rem;
+}
+
+
+/* media queries */
+@media (max-width: 1366px) {
+  #cards {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 766px) {
+
+  #title {
+    margin-top: 45rem;
+    font-size: 2.4rem;
+  }
+
+  .card-title {
+    font-size: 1.6rem;
+    width: 20rem;
+  }
+
+  .card-description {
+    font-size: 1.4rem;
+    width: 20rem;
+  }
+
+}
+
+@media (max-width: 408px) {
+
+  #title {
+    margin-top: 25rem;
+    font-size: 2.4rem;
+  }
+
+  .card-title {
+    font-size: 1.4rem;
+    width: 12rem;
+  }
+
+  .card-description {
+    font-size: 1.2rem;
+    width: 12rem;
+  }
+
+
+}
