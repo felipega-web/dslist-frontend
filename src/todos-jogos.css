@@ -5,3 +5,11 @@
 #title {
   margin-top: 20rem;
 }
+
+
+@media (max-width: 766px) {
+  #title {
+    margin-top: 50rem;
+    font-size: 2.4rem;
+  }
+}
