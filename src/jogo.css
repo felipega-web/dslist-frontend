@@ -97,6 +97,16 @@ body {
   margin-bottom: 2rem;
 }
 
+.card-controls {
+  margin-top: -4rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.card-controls button {
+  cursor: pointer;
+}
+
 .card-img {
   width: 10rem;
   border-radius: 1rem;
